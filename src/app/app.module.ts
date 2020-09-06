@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UiComponent } from './ui/ui.component';
 import { GameComponent } from './game/container/game.component';
 
 import { StoreModule } from '@ngrx/store';
@@ -19,7 +18,6 @@ import { GameOverMenuComponent } from './game/game-over-menu/game-over-menu.comp
 @NgModule({
   declarations: [
     AppComponent,
-    UiComponent,
     GameComponent,
     LetterSelectionMenuComponent,
     TargetLetterDisplayComponent,
@@ -38,6 +36,6 @@ import { GameOverMenuComponent } from './game/game-over-menu/game-over-menu.comp
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [UiComponent, GameComponent]
+  exports: [GameComponent]
 })
 export class AppModule { }
