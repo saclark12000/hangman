@@ -1,0 +1,5 @@
+<div id="letters-wrapper">
+  <ng-container  *ngFor="let letter of availableLetters">
+    <div [ngClass]="{'unselected': !letter.selected, 'selected': letter.selected}" class="spacing" (click)="!letter.selected? selectLetter(letter.letter):null">{{letter.letter}}</div>
+  </ng-container>
+</div>

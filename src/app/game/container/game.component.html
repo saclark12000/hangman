@@ -1,0 +1,7 @@
+<div id="game-wrapper">
+  <hm-header></hm-header>
+  <hm-strike-display [strikes]="strikes$ | async"></hm-strike-display>
+  <hm-target-letter-display [targetLetters]="targetLetters$ | async"></hm-target-letter-display>
+  <hm-letter-selection-menu (selectedLetterEvent)="selectLetter($event)" [availableLetters]="availableLetters$ | async"></hm-letter-selection-menu>
+  <hm-game-over-menu *ngIf="isStruckOut || isWordSolved" (resetEvent)="reset()" [gameLost]="gameLost"></hm-game-over-menu>
+</div>

@@ -1,0 +1,27 @@
+@import url('../../../styles.less');
+
+#menu-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  padding: 0px 5px;
+  font-size: 32px;
+  color: @dark;
+  font-family: @font-style;
+  div {
+    text-align: center;
+  }
+}
+
+#game-over-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top:0;
+  left: 0;
+  &:hover{
+    cursor: pointer;
+  }
+}

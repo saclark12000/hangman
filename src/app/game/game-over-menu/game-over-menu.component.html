@@ -1,0 +1,5 @@
+<div id="game-over-overlay" (click)="resetEvent.emit()"></div>
+<div id="menu-wrapper">
+  <div id="blurb"> You <span *ngIf="gameLost">loose</span><span *ngIf="!gameLost">win</span>!</div>
+  <div id="again">Click anywhere to play again.</div>
+</div>

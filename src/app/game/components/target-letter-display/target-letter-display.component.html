@@ -1,0 +1,6 @@
+<div class="target-letters-wrapper">
+  <ng-container  *ngFor="let letter of targetLetters">
+    <div [ngStyle]="{'display': letter.selected ? 'flex' : 'none'}" class="letter spacing">{{letter.letter}}</div>
+    <div [ngStyle]="{'display': letter.selected ? 'none' : 'flex'}" class="cover spacing"></div>
+  </ng-container>
+</div>

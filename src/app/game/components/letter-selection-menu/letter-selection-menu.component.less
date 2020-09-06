@@ -1,0 +1,32 @@
+@import url('../../../../styles.less');
+#letters-wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+  font-family: @font-style;
+  font-size: 32px;
+  .spacing {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    width: 27px;
+    height: 36px;
+    border-radius: 5px;
+  }
+  .unselected {
+    color: @dark;
+    transition-duration: 0.5s;
+    &:hover{
+      cursor: pointer;
+      color: @light;
+      transition-duration: 0.25s;
+    }
+  }
+  .selected {
+    opacity: .25;
+  }
+}
