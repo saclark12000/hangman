@@ -30,7 +30,6 @@ export class GameComponent implements OnInit {
   constructor(private store: Store) { }
 
   ngOnInit(): void {
-    console.log(this.targetLetters)
     this.reset();
     this.availableLetters$ = this.store.select(selectors.getAvailableLetters);
     this.targetLetters$ = this.store.select(selectors.getTargetLetters);
