@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
+declare var require: any;
 
 @Component({
   selector: 'hm-strike-display',
