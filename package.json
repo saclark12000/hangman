@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href https://saclark12000.github.io/hangman/ && angular-cli-ghpages --branch gh-pages"
+    "deploy": "ng build --prod --base-href https://saclark12000.github.io/hangman/ --output-path docs"
   },
   "private": true,
   "dependencies": {

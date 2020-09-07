@@ -13,7 +13,7 @@ import { LetterSelectionMenuComponent } from './game/components/letter-selection
 import { TargetLetterDisplayComponent } from './game/components/target-letter-display/target-letter-display.component';
 import { StrikeDisplayComponent } from './game/components/strike-display/strike-display.component';
 import { HeaderComponent } from './game/components/header/header.component';
-import { GameOverMenuComponent } from './game/game-over-menu/game-over-menu.component'
+import { GameOverMenuComponent } from './game/components/game-over-menu/game-over-menu.component'
 
 @NgModule({
   declarations: [
